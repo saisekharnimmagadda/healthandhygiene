@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+</head>
+<body style="display: flex; justify-content: center; align-items: center; min-height: 100vh; background-color: #f0f0f0; font-family: Arial, sans-serif; margin: 0; padding: 0;">
+
+    <div style="background-color: white; padding: 20px; border-radius: 5px; box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); width: 300px; text-align: center;">
+        <h1>Login</h1>
+        <form style="display: flex; flex-direction: column; margin: 0;">
+            <input type="text" placeholder="Username" style="margin: 10px 0; padding: 8px; border: 1px solid #ccc; border-radius: 3px;" required>
+            <input type="password" placeholder="Password" style="margin: 10px 0; padding: 8px; border: 1px solid #ccc; border-radius: 3px;" required>
+            <button type="button" style="padding: 10px; background-color: #007bff; color: white; border: none; border-radius: 3px; cursor: pointer; transition: background-color 0.2s ease;" onclick="login()">Login</button>
+        </form>
+    </div>
+
+    <script>
+        function login() {
+            var username = document.querySelector('input[type="text"]').value;
+            var password = document.querySelector('input[type="password"]').value;
+
+            if (username === "admin" && password === "1234") {
+                window.location.href = "front_page.html"; // Redirect to the dashboard page
+            } else {
+                alert("Login failed. Incorrect username or password.");
+            }
+        }
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+/* Add a gray background color with some padding */
+body {
+  font-family: Arial;
+  padding: 20px;
+  background: #dce3f5;
+}
+
+/* Header/Blog Title */
+.header {
+  padding: 30px;
+  font-size: 40px;
+  text-align: center;
+  background: rgb(255, 255, 255);
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+  float: left;
+  width: 75%;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  padding-left: 20px;
+}
+
+/* Fake image */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Add a card effect for articles */
+.card {
+   background-color: white;
+   padding: 20px;
+   margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+  margin-top: 20px;
+}
+
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h2>Articles</h2>
+</div>
+
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      <h2>PHYSICAL HEALTH</h2>
+      <h5>A small description about physical health. date:</h5>
+      <table>
+        <tr><td align ="left">
+            <div style="height:200px;"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCSliEeRvS_XHtyr-83EuaLiS653RZIrnxRg&usqp=CAU" srcset="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCSliEeRvS_XHtyr-83EuaLiS653RZIrnxRg&usqp=CAU"  height="100%">
+            </div>
+        </td>
+        <td>
+            <p><h4> The American Heart Association says, “Physical activity boosts mental wellness. Regular physical activity can relieve tension, stress, anxiety, depression, and anger. You may feel a good sensation immediately following your physical activity, and most people also note an improvement in general well-being over time as physical activity becomes a part of their routine.”</h4>
+            </p>
+        </td>
+        </tr>
+      </table>
+    </div>
+    <div class="card">
+      <h2>MENTAL HEALTH</h2> 
+      <h5>A small description about mental health, date:</h5>
+      <table>
+        <tr><td align="left">
+            <div style="height:200px;"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFP3Vdv4PRVEcNTepPO3AD8shicsicllgST384b2lir-M40mAgi5OGWWJXO4pXiWAjz_M&usqp=CAU" srcset="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFP3Vdv4PRVEcNTepPO3AD8shicsicllgST384b2lir-M40mAgi5OGWWJXO4pXiWAjz_M&usqp=CAU" height="85%"></div>
+        </td>
+        <td>
+            <p><h4> Mental health is a level of psychological well-being or an absence of mental illness. It is the “psychological state of someone who is functioning at a satisfactory level of emotional and behavioral adjustment. It affects how we think, feel, and act. It also helps determine how we handle stress, relate to others, and make healthy choices.”</h4></p>
+        </td>
+        </tr>
+      </table>
+    </div>
+    <div class="card">
+        <h2>SOCIAL HEALTH</h2>
+        <h5>Title description, date:</h5>
+        <table>
+            <tr><td align="left">
+                <div style="height:200px;"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTalhU2P9CglTX2Z-HRxoO6Egd9TsAxx9j8bg&usqp=CAU" srcset="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTalhU2P9CglTX2Z-HRxoO6Egd9TsAxx9j8bg&usqp=CAU" height="%"></div>
+            </td>
+            <td>
+                <p><h4>Social health is how you get along with other people, which involves your ability to form satisfying interpersonal relationships with others. Research now shows that a lack of strong social ties puts you at a greater health risk than obesity.If we really want to understand human thriving, the social component is essential. There is 80 years long Harvard study done on individuals that showed the quality of close social relationships was actually the best victor of health and happiness. So not only it’s important to consider the health of our bodies but we need to consider the health of our communities.</h4></p>
+            </td>
+            </tr>
+        </table>
+      </div>
+  </div>
+  <div class = "rightcolumn">
+    <div class="card">
+        <h3>Popular Post</h3>
+        <div><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCSliEeRvS_XHtyr-83EuaLiS653RZIrnxRg&usqp=CAU" srcset="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCSliEeRvS_XHtyr-83EuaLiS653RZIrnxRg&usqp=CAU" width = "100%" height = "100%"></div><br>
+        <div><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFP3Vdv4PRVEcNTepPO3AD8shicsicllgST384b2lir-M40mAgi5OGWWJXO4pXiWAjz_M&usqp=CAU"srcset="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFP3Vdv4PRVEcNTepPO3AD8shicsicllgST384b2lir-M40mAgi5OGWWJXO4pXiWAjz_M&usqp=CAU" width="100%" height="100%"></div><br>
+        <div><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTalhU2P9CglTX2Z-HRxoO6Egd9TsAxx9j8bg&usqp=CAU" srcset="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTalhU2P9CglTX2Z-HRxoO6Egd9TsAxx9j8bg&usqp=CAU" width="100%" height="100%"></div>
+    </div>
+  </div>
+</div>
+
+<div class="footer">
+    <section class="last">
+        <div class="lb">
+            <div class="lb1">
+                <h3 class="c1">Connect with us</h3>
+                <li><a href="#">Instagram</a></li>
+                <li><a href="#">Twitter</a></li>
+                <li><a href="#">Fackebook</a></li>
+            </div>
+            <div class="lb3">
+                <h3 class="c3">Let Us Help You More</h3>
+                <li><a href="#">Help</a></li>
+            </div>
+    </div>
+    <h1 class="lth">Health and Hygiene</h1>
+    </section>
+</div>
+
+</body>
+</html>

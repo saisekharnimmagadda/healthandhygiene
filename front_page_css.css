@@ -1,0 +1,111 @@
+body{
+    background-color: rgba(255, 255, 255, 0);
+}
+.header img {
+    float: left;
+    width: 100px;
+    height: 100px;
+    background: rgb(111, 109, 99);
+  }
+/* back image */
+  .container {
+    position: relative;
+    text-align: center;
+    color: white;
+  }
+  .container img{
+    alt:Back Ground;
+    width: 100%;
+     height:400px;
+     filter:brightness(50%);
+  }
+  .centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }   
+  .centered h1{
+    font-size: 50px;
+    color:#cee5f8;
+  }
+
+  /* about */
+.about img{
+  alt:about;
+  width:100%;
+  border-radius: 10px;
+}
+/* Header  */
+.header img{
+  width:50px;
+  height:45px;
+}
+a{
+    text-decoration: none;
+}
+
+.heading h1{
+    text-align: center;
+    color: #023b6d;
+    font-size: 30px;
+}
+
+  .size{
+    font-size:20px;
+  }
+
+ 
+  /* Buttons */
+  .btn-group button {
+    align-content: center;
+    width: 40%;
+    background-color: #a5bacd; /* Green background */
+    border: none;
+    padding: 30px 20px; /* Some padding */
+    cursor:pointer; /* Pointer/hand icon */
+    /* float:left; Float the buttons side by side */
+    margin: 2em;
+    display: table-cell;
+  }
+  
+  .btn-group button:not(:last-child) {
+    border-right: none; /* Prevent double borders */
+  }
+  
+  /* Clear floats (clearfix hack) */
+  .btn-group:after {
+    content: "";
+    clear: both;
+    display:table-cell;
+  }
+  
+  /* Add a background color on hover */
+  .btn-group button:hover {
+    background-color: #4c81b0;
+  }
+
+  
+  /* Footer */
+  .footer{
+    background-color:#edeeef;
+    font-size: 20px;
+  }
+  .footer ul{
+    list-style-type: square;
+  }
+  .footer a{
+    font-size: 20px;
+    color: black;
+  }
+  .footer a:hover{
+    text-decoration:solid;
+    color: rgb(93, 14, 202);
+    
+  }
+  .footer h3{
+    text-align: center;
+  } 
+ 
+
+  
